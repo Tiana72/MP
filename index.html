@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Market Place</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet"/>
+  <link href="css/material-icons.css" type="text/css" rel="stylesheet">
+  <link href="css/material-symbols.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet"/>
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/materialize.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+</head>
+<body>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container top-bar">
+      <div class="nav-contact">
+        <svg class="svg-accent" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.1545 15.0969C19.7463 15.0969 18.3637 14.8766 17.0535 14.4436C16.4115 14.2247 15.6222 14.4256 15.2304 14.828L12.6443 16.7802C9.64509 15.1793 7.79766 13.3325 6.21857 10.3558L8.11337 7.83707C8.60565 7.34545 8.78223 6.62729 8.57067 5.95347C8.13583 4.63636 7.91494 3.25438 7.91494 1.84563C7.915 0.82794 7.08706 0 6.06942 0H1.84557C0.82794 0 0 0.82794 0 1.84557C0 13.5103 9.48978 23 21.1545 23C22.1721 23 23.0001 22.1721 23.0001 21.1544V16.9424C23 15.9248 22.1721 15.0969 21.1545 15.0969Z" />
+          </g>
+        </svg>
+        <a href="tel: 0 800 33-96-91">0 800 33-96-91</a>
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L7 7L12 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="hide-on-med-and-down top-hello">
+        Welcome, <span>Guest!</span>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container nav-main">
+      <a id="logo-container" href="#" class="nav-logo"><img class="logo-image" src="img/mp-logo.svg" alt="logo"></a>
+      <div class="search-bar">
+        <form class="search-form">
+          <input id="search-input" class="search-input" type="text" name="product-name" placeholder="Enter product name">
+          <select class="search-select">
+            <option class="all-categories" value="AllCategories">All categories</option>
+            <option value="Category1">Category1</option>
+            <option value="Category2">Category2</option>
+            <option value="Category3">Category3</option>
+            <option value="Category4">Category4</option>
+            <option value="Category5">Category5</option>
+          </select>
+          <button class="search-button" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="main-menu">
+        <form class="lang-form">
+          <select class="lang-select">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="pl">PL</option>
+          </select>
+        </form>
+        <ul class="icons-menu hide-on-med-and-down">
+          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/scale.svg" alt="Compare"></a></li>
+          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/heart.svg" alt="favorite"></a></li>
+          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/cart.svg" alt="cart"></a></li>
+          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/user.svg" alt="user"></a></li>
+        </ul>
+      </div>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container white catalog">
+    <div class="section">
+      Catalog
+    </div>
+  </div>
+
+  <div id="index-banner" class="gray">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-symbols-outlined">search</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="gray">
+    <div class="section">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  </body>
+</html>
