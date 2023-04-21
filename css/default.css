@@ -1,0 +1,61 @@
+@import "normalize.css";
+@import "fonts.css";
+
+html {
+    --text-color: #282828;
+    --text-color-light: #666666;
+    --text-color-extralight: #848484;
+    --backgroung-color: #FFFFFF;
+    --text-unactive: #D9D9D9;
+    --accent-color: #B9C599;
+    --light-border:#DCDCDC;
+    --link-hover: rgba(185, 197, 153, 0.5);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: var(--backgroung-color);
+    overflow: hidden;
+}
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3 p, figure {
+    margin: 0;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.black {
+    background-color: #000000;
+}
+.white {
+    background-color: #FFFFFF;
+}
+.hide {
+    display: none;
+}

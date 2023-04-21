@@ -1,0 +1,8 @@
+@media (max-width: 1440px) {
+    .container__block {
+        max-width: 1150px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+}

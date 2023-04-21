@@ -5,74 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Market Place</title>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fonts -->
+  <link rel="preload" href="fonts/open-sans-v34-cyrillic_latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/open-sans-v34-cyrillic_latin-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/open-sans-v34-cyrillic_latin-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/open-sans-v34-cyrillic_latin-800.woff2" as="font" crossorigin>
+
   <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet"/>
-  <link href="css/material-icons.css" type="text/css" rel="stylesheet">
-  <link href="css/material-symbols.css" type="text/css" rel="stylesheet">
+  <link href="css/default.css" type="text/css" rel="stylesheet"/>
   <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  <link href="css/media.css" type="text/css" rel="stylesheet"/>
 
   <!--  Scripts-->
-  <script src="js/jquery-2.1.1.min.js" defer></script>
-  <script src="js/materialize.js" defer></script>
+<!--  <script src="js/jquery-2.1.1.min.js" defer></script>-->
   <script src="js/script.js" defer></script>
 
 </head>
 <body>
-  <nav class="black" role="navigation">
-    <div class="nav-wrapper container top-bar">
-      <div class="nav-contact">
-        <svg class="svg-accent" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+  <div class="container black">
+    <div class="container__block">
+      <div class="top-bar">
+        <div class="top-bar__contact">
+          <svg class="svg-accent" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.1545 15.0969C19.7463 15.0969 18.3637 14.8766 17.0535 14.4436C16.4115 14.2247 15.6222 14.4256 15.2304 14.828L12.6443 16.7802C9.64509 15.1793 7.79766 13.3325 6.21857 10.3558L8.11337 7.83707C8.60565 7.34545 8.78223 6.62729 8.57067 5.95347C8.13583 4.63636 7.91494 3.25438 7.91494 1.84563C7.915 0.82794 7.08706 0 6.06942 0H1.84557C0.82794 0 0 0.82794 0 1.84557C0 13.5103 9.48978 23 21.1545 23C22.1721 23 23.0001 22.1721 23.0001 21.1544V16.9424C23 15.9248 22.1721 15.0969 21.1545 15.0969Z" />
-          </g>
-        </svg>
-        <a href="tel: 0 800 33-96-91">0 800 33-96-91</a>
-        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 2L7 7L12 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-      </div>
-      <div class="hide-on-med-and-down top-hello">
-        Welcome, <span>Guest!</span>
+          </svg>
+          <a class="top-bar__link" href="tel: 0 800 33-96-91">0 800 33-96-91</a>
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 2L7 7L12 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="hide-on-768 top-bar__hello">
+          Welcome, <span>Guest!</span>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container nav-main">
-      <a id="logo-container" href="#" class="nav-logo"><img class="logo-image" src="img/mp-logo.svg" alt="logo"></a>
-      <div class="search-bar">
-        <form class="search-form">
-          <input id="search-input" class="search-input" type="text" name="product-name" placeholder="Enter product name">
-          <select class="search-select">
-            <option class="all-categories" value="AllCategories">All categories</option>
-            <option value="Category1">Category1</option>
-            <option value="Category2">Category2</option>
-            <option value="Category3">Category3</option>
-            <option value="Category4">Category4</option>
-            <option value="Category5">Category5</option>
-          </select>
-          <button class="search-button" type="submit">Search</button>
-        </form>
-      </div>
-      <div class="main-menu">
-        <form class="lang-form">
-          <select class="lang-select">
-            <option value="en">EN</option>
-            <option value="ru">RU</option>
-            <option value="pl">PL</option>
-          </select>
-        </form>
-        <ul class="icons-menu hide-on-med-and-down">
-          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/scale.svg" alt="Compare"></a></li>
-          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/heart.svg" alt="favorite"></a></li>
-          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/cart.svg" alt="cart"></a></li>
-          <li><a class="icons-menu-link" href="#"><img class="icons-menu-img" src="img/user.svg" alt="user"></a></li>
+  <nav class="container white">
+    <div class="container__block">
+      <div class="navigation">
+        <a href="#" class="navigation__logo"><img class="navigation__logo-image" src="img/mp-logo.svg" alt="logo"></a>
+        <div class="navigation__search-bar">
+          <form class="navigation__search-form">
+            <input class="navigation__search-input" type="text" name="product-name" placeholder="Enter product name">
+            <select class="navigation__search-select">
+              <option value="AllCategories" disabled selected>All categories</option>
+              <option value="Category1">Category1</option>
+              <option value="Category2">Category2</option>
+              <option value="Category3">Category3</option>
+              <option value="Category4">Category4Category4</option>
+              <option value="Category5">Category5Category5Category5</option>
+            </select>
+            <button class="button navigation__search-button" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="navigation__menu-main">
+          <form class="navigation__lang-form">
+            <select class="navigation__lang-select">
+              <option value="en" selected>EN</option>
+              <option value="ru">RU</option>
+              <option value="pl">PL</option>
+            </select>
+          </form>
+          <ul class="navigation__menu-icons hide-on-768">
+            <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/scale.svg" alt="Compare"></a></li>
+            <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/heart.svg" alt="favorite"></a></li>
+            <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/cart.svg" alt="cart"></a></li>
+            <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/user.svg" alt="user"></a></li>
+          </ul>
+        </div>
+
+        <ul class="navigation__menu-sidenav hide">
+          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/scale.svg" alt="Compare">Compare</a></li>
+          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/heart.svg" alt="favorite">Favorites</a></li>
+          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/cart.svg" alt="cart">Cart</a></li>
+          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/user.svg" alt="user"></a>Personal</li>
         </ul>
+        <a href="#" class="hide show-on-768 navigation__menu-sidenav-trigger">EEE</a>
       </div>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
@@ -82,7 +100,7 @@
     </div>
   </div>
 
-  <div id="index-banner" class="gray">
+<!--  <div id="index-banner" class="gray">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
@@ -104,7 +122,7 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
+      &lt;!&ndash;   Icon Section   &ndash;&gt;
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -197,7 +215,7 @@
       Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
-  </footer>
+  </footer>-->
 
 
 
