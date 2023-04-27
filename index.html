@@ -30,7 +30,7 @@
 
 </head>
 <body>
-  <div class="container black">
+  <!--<div class="container black">
     <div class="container__block">
       <div class="top-bar">
         <div class="top-bar__contact">
@@ -42,12 +42,12 @@
             <path d="M2 2L7 7L12 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="hide-on-768 top-bar__hello">
+        <div class="top-bar__hello">
           Welcome, <span>Guest!</span>
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <nav class="container white">
     <div class="container__block">
@@ -57,12 +57,18 @@
           <form class="navigation__search-form">
             <input class="navigation__search-input" type="text" name="product-name" placeholder="Enter product name">
             <select class="navigation__search-select">
-              <option value="AllCategories" disabled selected>All categories</option>
-              <option value="Category1">Category1</option>
-              <option value="Category2">Category2</option>
-              <option value="Category3">Category3</option>
-              <option value="Category4">Category4Category4</option>
-              <option value="Category5">Category5Category5Category5</option>
+              <option class="navigation__search-option" value="AllCategories" selected>All categories</option>
+              <optgroup class="navigation__search-optgroup" label="Category1">
+                <option class="navigation__search-option" value="Subcategory1">Subcategory1</option>
+                <option class="navigation__search-option" value="Subcategory2">Subcategory2</option>
+                <option class="navigation__search-option" value="Subcategory3">Subcategory3</option>
+              </optgroup>
+              <optgroup class="navigation__search-optgroup" label="Category2">
+                <option class="navigation__search-option" value="Subcategory4">Subcategory4Subcategory4</option>
+                <option class="navigation__search-option" value="Subcategory5">Subcategory5Subcategory5Subcategory5</option>
+              </optgroup>
+              <option class="navigation__search-option" value="Subcategory4">Subcategory4</option>
+              <option class="navigation__search-option" value="Subcategory5">Subcategory5</option>
             </select>
             <button class="button navigation__search-button" type="submit">Search</button>
           </form>
@@ -75,21 +81,27 @@
               <option value="pl">PL</option>
             </select>
           </form>
-          <ul class="navigation__menu-icons hide-on-768">
+          <ul class="navigation__menu-icons">
             <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/scale.svg" alt="Compare"></a></li>
             <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/heart.svg" alt="favorite"></a></li>
             <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/cart.svg" alt="cart"></a></li>
             <li><a class="navigation__menu-icons-link" href="#"><img class="navigation__menu-icons-img" src="img/user.svg" alt="user"></a></li>
           </ul>
-        </div>
+          <a id="trigger" href="javascript:void(0);" onclick="burger()" class="navigation__menu-sidenav-trigger">
+            <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H31V3.78788H0V0Z" fill="#282828"/>
+              <path d="M0 10.6061H31V14.3939H0V10.6061Z" fill="#282828"/>
+              <path d="M0 21.2121H31V25H0V21.2121Z" fill="#282828"/>
+            </svg>
+          </a>
+          <ul id="burger" class="navigation__menu-sidenav">
+            <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/scale.svg" alt="Compare">Compare</a></li>
+            <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/heart.svg" alt="favorite">Favorites</a></li>
+            <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/cart.svg" alt="cart">Cart</a></li>
+            <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/user.svg" alt="user"></a>Personal</li>
+          </ul>
 
-        <ul class="navigation__menu-sidenav hide">
-          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/scale.svg" alt="Compare">Compare</a></li>
-          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/heart.svg" alt="favorite">Favorites</a></li>
-          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/cart.svg" alt="cart">Cart</a></li>
-          <li><a class="navigation__menu-sidenav-link" href="#"><img class="navigation__menu-sidenav-img" src="img/user.svg" alt="user"></a>Personal</li>
-        </ul>
-        <a href="#" class="hide show-on-768 navigation__menu-sidenav-trigger">EEE</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -100,122 +112,7 @@
     </div>
   </div>
 
-<!--  <div id="index-banner" class="gray">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
 
-      </div>
-    </div>
-    
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      &lt;!&ndash;   Icon Section   &ndash;&gt;
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-symbols-outlined">search</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="gray">
-    <div class="section">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>-->
 
 
 

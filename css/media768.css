@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
-    .hide-on-768 {
+    .navigation__menu-icons {
         display: none;
     }
-    .show-on-768 {
+    .navigation__menu-sidenav-trigger {
         display: block;
     }
 }

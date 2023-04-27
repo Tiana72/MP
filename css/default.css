@@ -56,6 +56,12 @@ fieldset {
 .white {
     background-color: #FFFFFF;
 }
+.gray {
+    background-color: #F2F2F2;
+}
 .hide {
     display: none;
+}
+.show {
+    display: block;
 }

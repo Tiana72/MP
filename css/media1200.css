@@ -1,3 +1,15 @@
 @media (max-width: 1200px) {
-
+    .navigation {
+        flex-wrap: wrap;
+    }
+    .navigation__logo {
+        flex-basis: auto;
+    }
+    .navigation__menu-main {
+        flex-basis: auto;
+    }
+    .navigation__search-bar {
+        flex-basis: 100%;
+        order: 1;
+    }
 }
