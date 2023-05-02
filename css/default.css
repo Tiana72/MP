@@ -29,7 +29,7 @@ body {
 }
 button {
     padding: 0;
-    background-color: transparent;
+    background: var(--link-hover);
     border: none;
     cursor: pointer;
 }
